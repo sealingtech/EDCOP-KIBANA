@@ -59,4 +59,3 @@ master 		Ready		master		1d		v1.9.1		...,nodetype=master
 minion-1	Ready		<none>		1d		v1.9.1		...,nodetype=minion
 minion-2	Ready		<none>		1d		v1.9.1		...,nodetype=minion
 ```
-# EDCOP-KIBANA
