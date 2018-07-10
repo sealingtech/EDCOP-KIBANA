@@ -7,7 +7,6 @@ data:
     # Kibana Configuration File
     server.name: kibana
     server.host: "0.0.0.0"
-    server.basePath: "/"
     elasticsearch.url: http://data-service:9200
     elasticsearch.username: elastic
     elasticsearch.password: changeme
