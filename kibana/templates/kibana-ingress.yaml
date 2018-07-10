@@ -12,7 +12,7 @@ spec:
   - host: {{ .Values.ingress.host }}
     http:
       paths:
-      - path: /kibana
+      - path: /
         backend:
           serviceName: {{ template "kibana.fullname" . }}-kibana-svc
           servicePort: 5601
