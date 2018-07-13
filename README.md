@@ -67,5 +67,5 @@ This value must be set to function correctly.  This is the hostname that will be
 ```
 ingress:
   # Enter the FQDN of how you will access kibana.
-  host: kibana.physical.edcop.io  
+  host: kibana.edcop.io  
 ```

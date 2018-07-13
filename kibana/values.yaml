@@ -8,5 +8,5 @@ networks:
 nodeSelector:
   label: infrastructure
 ingress:
-  # Enter the FQDN of your host
-  host: physical.edcop.io  
+  #Enter the subdomain and the FQDN that will be used to access Kibana
+  host: kibana.edcop.io  
