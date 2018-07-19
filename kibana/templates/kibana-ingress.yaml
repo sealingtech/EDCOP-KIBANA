@@ -14,5 +14,5 @@ spec:
       paths:
       - path: /
         backend:
-          serviceName: {{ template "kibana.fullname" . }}-kibana-svc
+          serviceName: kibana-service
           servicePort: 5601
