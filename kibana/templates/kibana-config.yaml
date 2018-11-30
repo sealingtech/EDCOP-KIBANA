@@ -14,6 +14,5 @@ data:
     xpack.graph.enabled: false
     xpack.ml.enabled: false
     xpack.monitoring.enabled: true
-    xpack.reporting.enabled: false
     xpack.security.enabled: false
     xpack.monitoring.ui.container.elasticsearch.enabled: true
