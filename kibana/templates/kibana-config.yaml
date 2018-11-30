@@ -10,9 +10,3 @@ data:
     elasticsearch.url: http://data-service:9200
     elasticsearch.username: elastic
     elasticsearch.password: changeme
-    # Disable paid X-Pack services, enable freebies
-    xpack.graph.enabled: false
-    xpack.ml.enabled: false
-    xpack.monitoring.enabled: true
-    xpack.security.enabled: false
-    xpack.monitoring.ui.container.elasticsearch.enabled: true
