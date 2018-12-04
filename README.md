@@ -20,7 +20,7 @@ By default, the Kibana image is pulled from Elastic.co directly. If you're chang
 
 ```
 image:
-  kibana: docker.elastic.co/kibana/kibana:6.4.3
+  kibana: docker.elastic.co/kibana/kibana:6.4.2
 ```
 
 ## Networks
