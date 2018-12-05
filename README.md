@@ -2,38 +2,38 @@
 
 Table of Contents
 -----------------
- 
+
 * [Configuration Guide](#configuration-guide)
 	* [Image Repository](#image-repository)
 	* [Networks](#networks)
 	* [Node Selector](#node-selector)
 	* [Ingress](#ingress)
-	
+
 # Configuration Guide
 
 Within this configuration guide, you will find instructions for modifying Kibana's helm chart. All changes should be made in the *values.yaml* file.
 Please share any bugs or features requests via GitHub issues.
- 
+
 ## Image Repository
 
 By default, the Kibana image is pulled from Elastic.co directly. If you're changing this value, make sure you use the full repository name.
- 
+
 ```
 image:
-  kibana: docker.elastic.co/kibana/kibana:6.2.4
+  kibana: docker.elastic.co/kibana/kibana:6.4.2
 ```
 
 ## Networks
 
-Kibana only uses an overlay network to communicate because it isn't a network sensing tool and doesn't monitor any traffic. By default, the overlay network is named *calico*. 
+Kibana only uses an overlay network to communicate because it isn't a network sensing tool and doesn't monitor any traffic. By default, the overlay network is named *calico*.
 
 ```
 networks:
   overlay: calico
 ```
- 
+
 To find the names of your networks, use the following command:
- 
+
 ```
 # kubectl get networks
 NAME		AGE
@@ -46,12 +46,12 @@ inline-2	1d
 ## Node Selector
 
 This value tells Kubernetes which hosts the deployment should be deployed to by using labels given to the hosts. Hosts without the defined label will not receive pods. By default Kibana will be deployed to any system labelled as infrastructure equal to true.
- 
+
 ```
 nodeSelector:
   nodetype: infrastructure
 ```
- 
+
 To find out what labels your hosts have, please use the following:
 ```
 # kubectl get nodes --show-labels
